@@ -1,8 +1,8 @@
 ---
 # controllerImages are used to run the PostgresCluster and PGUpgrade controllers.
 controllerImages:
-  cluster: registry.developers.crunchydata.com/crunchydata/postgres-operator:ubi8-5.2.0-0
-  upgrade: registry.developers.crunchydata.com/crunchydata/postgres-operator-upgrade:ubi8-5.2.0-0
+  cluster: registry.developers.crunchydata.com/crunchydata/postgres-operator:ubi8-5.2.1-0
+  upgrade: registry.developers.crunchydata.com/crunchydata/postgres-operator-upgrade:ubi8-5.2.1-0
 
 # relatedImages are used when an image is omitted from PostgresCluster or PGUpgrade specs.
 relatedImages:
@@ -25,9 +25,9 @@ relatedImages:
   pgbouncer:
     image: registry.developers.crunchydata.com/crunchydata/crunchy-pgbouncer:ubi8-1.17-1
   pgexporter:
-    image: registry.developers.crunchydata.com/crunchydata/crunchy-postgres-exporter:ubi8-5.2.0-0
+    image: registry.developers.crunchydata.com/crunchydata/crunchy-postgres-exporter:ubi8-5.2.1-0
   pgupgrade:
-    image: registry.developers.crunchydata.com/crunchydata/crunchy-upgrade:ubi8-5.2.0-0
+    image: registry.developers.crunchydata.com/crunchydata/crunchy-upgrade:ubi8-5.2.1-0
 
 # singleNamespace controls where PGO watches for PostgresClusters. When false,
 # PGO watches for and responds to PostgresClusters in all namespaces. When true,
