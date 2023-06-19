@@ -37,7 +37,7 @@ spec:
           value: crunchy-prometheus
         - name: PROM_PORT
           value: "9090"
-        image: grafana/grafana:9.3.1
+        image: grafana/grafana:10.0.0
         imagePullPolicy: IfNotPresent
         livenessProbe:
           failureThreshold: 3
